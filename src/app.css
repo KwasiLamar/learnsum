@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	@apply h-auto;
+}
+
+.none {
+	display: none;
+}
+
+@media (max-width: 320px) {
+	body {
+		font-size: 0.7rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.md\:show {
+		display: block;
+	}
+}
+
+.btn-blue {
+	@apply px-4 py-2 bg-sky-500 transform transition hover:scale-x-110 inline-block cursor-pointer text-white rounded-lg mr-4;
+}
+
+.btn-blue.block {
+	@apply px-16 py-2 bg-sky-500 transform transition hover:scale-x-110 inline-block cursor-pointer text-white rounded-lg mr-4;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+	@apply border border-black rounded-lg p-2 mx-2 my-3;
+}
